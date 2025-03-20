@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import image1 from "../../public/images/profile.jpg"
+import image1 from "../../public/images/profile.jpg";
 
 export const metadata: Metadata = {
   title: "Tentang Saya",
@@ -18,7 +18,7 @@ export default function About() {
       {/* Foto Profil */}
       <div className="mt-10">
         <Image
-          src={image1} // Gunakan variable yang sudah diimport
+          src={image1}
           alt="Foto Profil"
           width={150}
           height={150}
@@ -29,14 +29,14 @@ export default function About() {
       {/* Deskripsi Diri */}
       <h1 className="text-3xl font-bold mt-4">Wahyudinata</h1>
       <p className="mt-2 text-gray-600 text-center max-w-lg">
-      I am a student of Informatics engineering with a focus on data. 
-      I am a motivated data enthusiast. I have developed data skills in 
-      query languages such as SQL, data analysis and data science through my studies at university. 
-      I am also active in campus organisations such as HMJ. I am a person who 
-      likes to explore new things and adapt easily to new social situations and environments.
+        I am a student of Informatics engineering with a focus on data.
+        I am a motivated data enthusiast. I have developed data skills in
+        query languages such as SQL, data analysis and data science through my studies at university.
+        I am also active in campus organisations such as HMJ. I am a person who
+        likes to explore new things and adapt easily to new social situations and environments.
       </p>
 
-            {/* Social Media Links */}
+      {/* Social Media Links */}
       <div className="mt-4 flex gap-4">
         <a
           href="https://github.com/yourusername"
@@ -54,45 +54,41 @@ export default function About() {
         </a>
       </div>
 
-
       {/* Experience */}
-<div className="mt-8 w-full max-w-2xl">
-  <h2 className="text-2xl font-semibold mb-3">Experience</h2>
-  <div className="bg-white shadow-md rounded-lg p-4">
-    <h3 className="font-bold text-blue-600">Assistant Product Operation Data Science</h3>
-    <h3>Intership</h3>
-    <p>dibimbing.id (2024)</p>    
-    <ul className="mt-2 text-sm list-disc list-inside text-gray-700">
-      <li>Create a Coding Exercise answer key for students in Bootcamp</li>
-      <li>Create Prediction Final Project with Machine Learning for Product Development</li>
-      <li>Handling B2C product development</li>
-      <li>Develop and communicate a clear product vision and strategy aligned with company goals and market needs.</li>
-      <li>Designed and evaluated product development processes, optimizing workflows and ensuring product success</li>
-      <li>Prepared and managed comprehensive documentation related to product development, including requirements, specifications, and launch plans</li>
-      <li>Coordinate Class Manager in each bootcamp class</li>
-      <li>Researched and developed engaging content ideas for bootcamps and data science topics, driving student interest and program value</li>
-    </ul>
-  </div>
-  <div className="bg-white shadow-md rounded-lg p-4">
-    <h3 className="font-bold text-blue-600">Master Chief of UI/UX and PM Bootcamp</h3>
-    <h3>Intership</h3>
-    <p>harisenin.com (2024)</p>    
-    <ul className="mt-2 text-sm list-disc list-inside text-gray-700">
-      <li>Moderate question-and-answer segments, ensuring smooth communication between participants and speakers.</li>
-      <li>Motivate attendees to actively participate in discussions, exercises, and activities.</li>
-    </ul>
-  </div>
-</div>
-
-
-
+      <div className="mt-8 w-full max-w-2xl">
+        <h2 className="text-2xl font-semibold mb-3">Experience</h2>
+        <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white shadow-md rounded-lg p-4">
+          <h3 className="font-bold">Assistant Product Operation Data Science</h3>
+          <h3>Intership</h3>
+          <p>dibimbing.id (2024)</p>    
+          <ul className="mt-2 text-sm list-disc list-inside">
+            <li>Create a Coding Exercise answer key for students in Bootcamp</li>
+            <li>Create Prediction Final Project with Machine Learning for Product Development</li>
+            <li>Handling B2C product development</li>
+            <li>Develop and communicate a clear product vision and strategy aligned with company goals and market needs.</li>
+            <li>Designed and evaluated product development processes, optimizing workflows and ensuring product success</li>
+            <li>Prepared and managed comprehensive documentation related to product development, including requirements, specifications, and launch plans</li>
+            <li>Coordinate Class Manager in each bootcamp class</li>
+            <li>Researched and developed engaging content ideas for bootcamps and data science topics, driving student interest and program value</li>
+          </ul>
+        </div>
+        <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white shadow-md rounded-lg p-4 mt-4">
+          <h3 className="font-bold">Master Chief of UI/UX and PM Bootcamp</h3>
+          <h3>Intership</h3>
+          <p>harisenin.com (2024)</p>    
+          <ul className="mt-2 text-sm list-disc list-inside">
+            <li>Moderate question-and-answer segments, ensuring smooth communication between participants and speakers.</li>
+            <li>Motivate attendees to actively participate in discussions, exercises, and activities.</li>
+          </ul>
+        </div>
+      </div>
 
       {/* Education */}
       <div className="mt-8 w-full max-w-2xl">
         <h2 className="text-2xl font-semibold mb-3">Education</h2>
-        <div className="bg-white shadow-md rounded-lg p-4">
+        <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white shadow-md rounded-lg p-4">
           <h3 className="font-bold">Undergraduate of Informatic Engineering</h3>
-          <p className="text-gray-600">Politeknik Negeri Malang</p>
+          <p>Politeknik Negeri Malang</p>
         </div>
       </div>
 
