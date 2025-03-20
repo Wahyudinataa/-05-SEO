@@ -1,102 +1,122 @@
+import type { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
+import image1 from "../../public/images/profile.jpg"
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Tentang Saya",
+  description: "Halaman tentang saya.",
+  openGraph: {
+    title: "Tentang Saya",
+    description: "Halaman tentang saya.",
+  },
+};
+
+export default function About() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
+      {/* Foto Profil */}
+      <div className="mt-10">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src={image1} // Gunakan variable yang sudah diimport
+          alt="Foto Profil"
+          width={150}
+          height={150}
+          className="rounded-full shadow-lg"
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Deskripsi Diri */}
+      <h1 className="text-3xl font-bold mt-4">Wahyudinata</h1>
+      <p className="mt-2 text-gray-600 text-center max-w-lg">
+      I am a student of Informatics engineering with a focus on data. 
+      I am a motivated data enthusiast. I have developed data skills in 
+      query languages such as SQL, data analysis and data science through my studies at university. 
+      I am also active in campus organisations such as HMJ. I am a person who 
+      likes to explore new things and adapt easily to new social situations and environments.
+      </p>
+
+            {/* Social Media Links */}
+      <div className="mt-4 flex gap-4">
+        <a
+          href="https://github.com/yourusername"
+          target="_blank"
+          className="px-4 py-2 bg-black text-white rounded-lg shadow-md hover:bg-gray-800 transition-all duration-300"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://linkedin.com/in/yourusername"
+          target="_blank"
+          className="px-4 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300"
+        >
+          LinkedIn
+        </a>
+      </div>
+
+
+      {/* Experience */}
+<div className="mt-8 w-full max-w-2xl">
+  <h2 className="text-2xl font-semibold mb-3">Experience</h2>
+  <div className="bg-white shadow-md rounded-lg p-4">
+    <h3 className="font-bold text-blue-600">Assistant Product Operation Data Science</h3>
+    <h3>Intership</h3>
+    <p>dibimbing.id (2024)</p>    
+    <ul className="mt-2 text-sm list-disc list-inside text-gray-700">
+      <li>Create a Coding Exercise answer key for students in Bootcamp</li>
+      <li>Create Prediction Final Project with Machine Learning for Product Development</li>
+      <li>Handling B2C product development</li>
+      <li>Develop and communicate a clear product vision and strategy aligned with company goals and market needs.</li>
+      <li>Designed and evaluated product development processes, optimizing workflows and ensuring product success</li>
+      <li>Prepared and managed comprehensive documentation related to product development, including requirements, specifications, and launch plans</li>
+      <li>Coordinate Class Manager in each bootcamp class</li>
+      <li>Researched and developed engaging content ideas for bootcamps and data science topics, driving student interest and program value</li>
+    </ul>
+  </div>
+  <div className="bg-white shadow-md rounded-lg p-4">
+    <h3 className="font-bold text-blue-600">Master Chief of UI/UX and PM Bootcamp</h3>
+    <h3>Intership</h3>
+    <p>harisenin.com (2024)</p>    
+    <ul className="mt-2 text-sm list-disc list-inside text-gray-700">
+      <li>Moderate question-and-answer segments, ensuring smooth communication between participants and speakers.</li>
+      <li>Motivate attendees to actively participate in discussions, exercises, and activities.</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+      {/* Education */}
+      <div className="mt-8 w-full max-w-2xl">
+        <h2 className="text-2xl font-semibold mb-3">Education</h2>
+        <div className="bg-white shadow-md rounded-lg p-4">
+          <h3 className="font-bold">Undergraduate of Informatic Engineering</h3>
+          <p className="text-gray-600">Politeknik Negeri Malang</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </div>
+
+      {/* Skills */}
+      <div className="mt-8 w-full max-w-2xl">
+        <h2 className="text-2xl font-semibold mb-3">Skills</h2>
+        <div className="flex flex-wrap gap-2">
+          {["JavaScript", "React.js", "Next.js", "Python", "Machine Learning", "Tailwind CSS"].map((skill, index) => (
+            <span key={index} className="bg-blue-500 text-white text-sm font-semibold px-3 py-1 rounded-lg">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Navigasi */}
+      <nav className="mt-10 flex space-x-4">
+        <Link href="/projects" className="text-blue-500 hover:underline">Proyek</Link>
+        <Link href="/essays" className="text-blue-500 hover:underline">Esai</Link>
+      </nav>
+
+      {/* Footer */}
+      <footer className="mt-10 text-gray-500 text-sm">
+        © {new Date().getFullYear()} Wahyudinata. All rights reserved.
       </footer>
     </div>
   );
