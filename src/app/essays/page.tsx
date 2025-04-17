@@ -2,12 +2,23 @@ import type { Metadata } from "next"
 import React from "react";
 import ArticleCard from "@/components/ArticleCard";
 
+// export const metadata: Metadata = {
+//   title: 'Essays',
+//   description: 'Halaman tentang esai.',
+//   openGraph:{
+//     title:'Essays',
+//     description: 'Halaman tentang esai.',
+//   },
+// };
+
 export const metadata: Metadata = {
   title: 'Essays',
   description: 'Halaman tentang esai.',
-  openGraph:{
-    title:'Essays',
+  openGraph: {
+    title: 'Essays',
     description: 'Halaman tentang esai.',
+    images: 'https://example.com/default-image.jpg',
+    url: 'https://example.com/essays',
   },
 };
 
@@ -46,6 +57,9 @@ const articles = [
     link: "#",
   },
 ];
+
+
+
 
 export default function ArticlesPage() {
   return (

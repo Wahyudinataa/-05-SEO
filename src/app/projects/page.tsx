@@ -3,15 +3,8 @@ import Image, { StaticImageData } from 'next/image';
 import { NapiProjectOptions } from "next/dist/build/swc/generated-native";
 import ProjectCard from "@/components/ProjectCard";
 import { link } from "fs";
+import { defaultMetadata } from "@/utils/metadata";
 
-export const metadata: Metadata = {
-  title: 'Proyek',
-  description: 'Halaman tentang proyek.',
-  openGraph:{
-    title:'Proyek',
-    description: 'Halaman tentang proyek.',
-  },
-};
 
 const projects = [
   {
@@ -29,6 +22,17 @@ const projects = [
     link: "https://github.com/Wahyudinataa/Cancer-Detection-Python",
   },
 ];
+
+export const metadata: Metadata = {
+  title: 'Proyek',
+  description: 'Halaman tentang proyek.',
+  openGraph: {
+    title: 'Proyek',
+    description: 'Halaman tentang proyek.',
+    images: 'https://example.com/default-image.jpg',
+    url: 'https://example.com/projects',
+  },
+};
 
 export default function ProjectsPage() {
   return (
