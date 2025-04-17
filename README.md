@@ -1,36 +1,17 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Laporan Praktikum
 
-## Getting Started
+|  | Pemrograman Berbasis Framework 2024 |
+|--|--|
+| NIM |  244107027012|
+| Nama |  Wahyudinata |
+| Kelas | 4K-RPL |
 
-First, run the development server:
+### TUGAS
+### Menambahkan Favicon <br>
+![image](https://github.com/user-attachments/assets/7b4237ac-606b-4c90-a1d4-f366b6ec5974) <br>
+![image](https://github.com/user-attachments/assets/cc747741-cc40-469c-9b36-3f87531c1d14) <br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Menambahkan Metadata untuk SEO <br>
+![image](https://github.com/user-attachments/assets/f1693b30-48c0-4a37-8e45-70c65367799c) <br>
+![image](https://github.com/user-attachments/assets/0f0e3efc-f8ad-4d4b-baf0-bac6049a8884) <br>
+![image](https://github.com/user-attachments/assets/590bb92f-7fa6-451f-82e9-4bba11ac3c29) <br>
